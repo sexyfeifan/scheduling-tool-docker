@@ -258,7 +258,7 @@ body {
 
 .day-column {
     border-right: 1px solid rgba(0, 0, 0, 0.06);
-    padding: 16px;
+    padding: 20px;
     min-height: 600px;
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.3);
@@ -992,7 +992,7 @@ body {
 }
 
 .copy-date-option {
-    padding: 14px 8px;
+    padding: 10px 6px;
     text-align: center;
     background: rgba(0, 0, 0, 0.04);
     border-radius: var(--radius-md);
@@ -1000,6 +1000,11 @@ body {
     font-size: 13px;
     transition: all 0.2s ease;
     border: 2px solid transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
 }
 
 .copy-date-option:hover {
@@ -1015,14 +1020,11 @@ body {
 }
 
 .copy-date-option .date-label {
-    display: block;
     font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 4px;
+    font-size: 14px;
 }
 
 .copy-date-option .day-label {
-    display: block;
     font-size: 11px;
     opacity: 0.8;
 }
