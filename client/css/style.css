@@ -1562,6 +1562,7 @@ body {
         font-size: 10px;
     }
 }
+<<<<<<< HEAD
 
 /* 备份锁定状态样式 */
 .backup-locked {
@@ -1590,3 +1591,5 @@ body {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+=======
+>>>>>>> 1098dacf6480dba9262614e4f459b606098a9bd7

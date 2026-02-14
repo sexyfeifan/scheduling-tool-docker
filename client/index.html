@@ -257,6 +257,7 @@
                     </div>
                 </div>
                 
+<<<<<<< HEAD
                 <!-- 数据备份与恢复 - 独立板块（需要密码） -->
                 <div class="settings-section">
                     <h3>数据备份与恢复 🔒</h3>
@@ -310,6 +311,51 @@
                             <p>从本地选择备份文件恢复数据</p>
                         </div>
                     </div>
+=======
+                <!-- 数据备份与恢复 - 独立板块 -->
+                <div class="settings-section">
+                    <h3>数据备份与恢复</h3>
+                    <p style="color: var(--text-tertiary); font-size: 12px; margin-bottom: 16px;">备份文件将保存到服务器 backups 文件夹中</p>
+                    
+                    <!-- 一键备份到宿主机 -->
+                    <div class="backup-section">
+                        <div class="form-group">
+                            <button id="backup-to-host" class="btn primary">📦 一键备份到宿主机</button>
+                            <p>将所有设置和排期数据备份到服务器指定文件夹</p>
+                        </div>
+                        
+                        <!-- 备份列表 -->
+                        <div class="backup-list-container">
+                            <h4>最近备份记录</h4>
+                            <div id="backup-list" class="backup-list">
+                                <p class="no-backup">暂无备份记录</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 20px 0;">
+                    
+                    <!-- 从宿主机恢复 -->
+                    <div class="restore-section">
+                        <div class="form-group">
+                            <button id="restore-from-host" class="btn">📥 从备份恢复</button>
+                            <p>从服务器备份文件夹选择恢复数据</p>
+                        </div>
+                    </div>
+                    
+                    <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 20px 0;">
+                    
+                    <!-- 原有导出导入功能 -->
+                    <div class="form-group">
+                        <button id="export-data" class="btn">💾 下载备份文件</button>
+                        <p>下载 JSON 格式的备份文件到本地</p>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" id="import-file" accept=".json" style="display: none;">
+                        <button id="import-data" class="btn">📤 导入备份文件</button>
+                        <p>从本地选择备份文件恢复数据</p>
+                    </div>
+>>>>>>> 1098dacf6480dba9262614e4f459b606098a9bd7
                 </div>
                 <div class="form-actions">
                     <button id="save-settings" class="btn primary">保存设置</button>
@@ -321,6 +367,7 @@
     <!-- Toast 提示组件 -->
     <div id="toast-container"></div>
 
+<<<<<<< HEAD
     <!-- 密码验证模态框 -->
     <div id="password-modal" class="modal">
         <div class="modal-content" style="max-width: 400px;">
@@ -337,6 +384,8 @@
         </div>
     </div>
 
+=======
+>>>>>>> 1098dacf6480dba9262614e4f459b606098a9bd7
     <!-- Loading 加载指示器 -->
     <div id="loading-overlay" class="loading-overlay" style="display: none;">
         <div class="loading-spinner"></div>

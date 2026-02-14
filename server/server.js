@@ -22,9 +22,12 @@ const VERSION_FILE = path.join(DATA_DIR, 'version.json');
 // 默认备份目录（可通过环境变量配置）
 const BACKUP_DIR = process.env.BACKUP_DIR || path.join(__dirname, '..', 'backups');
 
+<<<<<<< HEAD
 // 备份功能访问密码（可通过环境变量配置，默认为 "admin123"）
 const BACKUP_PASSWORD = process.env.BACKUP_PASSWORD || 'admin123';
 
+=======
+>>>>>>> 1098dacf6480dba9262614e4f459b606098a9bd7
 // 确保数据目录存在
 async function ensureDataDir() {
   try {
@@ -292,7 +295,7 @@ app.post('/api/backup', async (req, res) => {
       settings: settings,
       schedules: schedules,
       backupDate: new Date().toISOString(),
-      version: '2.9'
+      version: '2.14'
     };
     
     // 保存备份文件
@@ -327,6 +330,7 @@ app.post('/api/backup', async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 // 验证备份密码
 app.post('/api/verify-password', async (req, res) => {
   const { password } = req.body;
@@ -343,6 +347,8 @@ app.post('/api/verify-password', async (req, res) => {
   }
 });
 
+=======
+>>>>>>> 1098dacf6480dba9262614e4f459b606098a9bd7
 // 获取备份列表
 app.get('/api/backups', async (req, res) => {
   try {
