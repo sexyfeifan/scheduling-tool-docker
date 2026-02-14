@@ -292,7 +292,7 @@ app.post('/api/backup', async (req, res) => {
       settings: settings,
       schedules: schedules,
       backupDate: new Date().toISOString(),
-      version: '2.14'
+      version: '2.9'
     };
     
     // 保存备份文件

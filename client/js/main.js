@@ -543,7 +543,6 @@ function renderSchedule() {
         
         // 如果有该项目日期的数据，则渲染项目卡片
         if (scheduleData[dateStr] && scheduleData[dateStr].length > 0) {
-        if (scheduleData[dateStr]) {
             scheduleData[dateStr].forEach((project, projectIndex) => {
                 const projectCard = createProjectCard(project, dateStr, projectIndex);
                 column.appendChild(projectCard);
@@ -1340,10 +1339,6 @@ function setupPasswordEvents() {
             }
         };
     }
-    // 加载备份列表
-    loadBackupList();
-    // 绑定备份恢复按钮事件
-    setupBackupEvents();
 }
 
 // 加载备份列表
