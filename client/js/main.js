@@ -1692,10 +1692,10 @@ async function copyProject(dateStr, projectIndex) {
             scheduleData[dateStr] = [];
         }
         
-        // 创建副本项目（添加"副本"后缀）
+        // 创建副本项目（不添加后缀）
         const copiedProject = {
             ...project,
-            name: `${project.name} (副本)`
+            name: project.name
         };
         
         // 添加到同一日期的项目列表末尾
@@ -2477,10 +2477,10 @@ function showCopyModal(dateStr, projectIndex) {
                     scheduleData[targetDate] = [];
                 }
                 
-                // 创建副本项目
+                // 创建副本项目（不添加后缀）
                 const copiedProject = {
                     ...project,
-                    name: `${project.name} (副本)`
+                    name: project.name
                 };
                 
                 scheduleData[targetDate].push(copiedProject);
