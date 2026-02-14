@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  scheduling-tool:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./backups:/app/backups
+    environment:
+      - BACKUP_DIR=/app/backups
+      - BACKUP_PASSWORD=admin123
+    restart: unless-stopped
