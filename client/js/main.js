@@ -542,11 +542,8 @@ function renderSchedule() {
         column.addEventListener('drop', handleDrop);
         
         // 如果有该项目日期的数据，则渲染项目卡片
-<<<<<<< HEAD
         if (scheduleData[dateStr] && scheduleData[dateStr].length > 0) {
-=======
         if (scheduleData[dateStr]) {
->>>>>>> 1098dacf6480dba9262614e4f459b606098a9bd7
             scheduleData[dateStr].forEach((project, projectIndex) => {
                 const projectCard = createProjectCard(project, dateStr, projectIndex);
                 column.appendChild(projectCard);
@@ -1245,7 +1242,6 @@ async function saveProject() {
 // 显示设置模态框
 function showSettingsModal() {
     settingsModal.style.display = 'block';
-<<<<<<< HEAD
     
     // 重置备份区域为锁定状态
     const backupLocked = document.getElementById('backup-locked');
@@ -1344,12 +1340,10 @@ function setupPasswordEvents() {
             }
         };
     }
-=======
     // 加载备份列表
     loadBackupList();
     // 绑定备份恢复按钮事件
     setupBackupEvents();
->>>>>>> 1098dacf6480dba9262614e4f459b606098a9bd7
 }
 
 // 加载备份列表

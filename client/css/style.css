@@ -1,6 +1,4 @@
-/* ========================================
    罐头场通告排期系统 v2.0 - Apple 风格设计
-   ======================================== */
 
 /* CSS 变量 - Apple 风格配色 */
 :root {
@@ -51,9 +49,7 @@ body {
     padding: 24px;
 }
 
-/* ========================================
    头部样式 - 毛玻璃效果
-   ======================================== */
 .header {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
@@ -76,9 +72,7 @@ body {
     letter-spacing: -0.5px;
 }
 
-/* ========================================
    版本信息 - 左上角显示
-   ======================================== */
 .version-info {
     position: fixed;
     top: 16px;
@@ -134,9 +128,7 @@ body {
     border-radius: var(--radius-md);
 }
 
-/* ========================================
    按钮样式 - Apple 风格
-   ======================================== */
 .btn {
     padding: 10px 20px;
     border: none;
@@ -193,9 +185,7 @@ body {
     border-color: rgba(0, 0, 0, 0.12);
 }
 
-/* ========================================
    主内容区域
-   ======================================== */
 .main-content {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
@@ -286,9 +276,7 @@ body {
     opacity: 0.6;
 }
 
-/* ========================================
    项目卡片 - 现代悬浮效果
-   ======================================== */
 .project-card {
     background: white;
     border-radius: var(--radius-lg);
@@ -492,9 +480,7 @@ body {
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
-/* ========================================
    模态框 - 毛玻璃效果
-   ======================================== */
 .modal {
     display: none;
     position: fixed;
@@ -646,9 +632,7 @@ body {
     justify-content: center;
 }
 
-/* ========================================
    日期选择器
-   ======================================== */
 .date-picker-header {
     display: flex;
     justify-content: space-between;
@@ -725,9 +709,7 @@ body {
     color: var(--text-secondary);
 }
 
-/* ========================================
    设置区域
-   ======================================== */
 .settings-section {
     margin-bottom: 24px;
     padding-bottom: 20px;
@@ -751,9 +733,7 @@ body {
     margin-top: 8px;
 }
 
-/* ========================================
    备份列表样式
-   ======================================== */
 .backup-list-container {
     margin-top: 16px;
 }
@@ -825,9 +805,7 @@ body {
     font-size: 12px;
 }
 
-/* ========================================
    导出预览
-   ======================================== */
 .export-modal {
     max-width: 720px;
 }
@@ -847,9 +825,7 @@ body {
     border-radius: var(--radius-md);
 }
 
-/* ========================================
    Toast 提示组件
-   ======================================== */
 #toast-container {
     position: fixed;
     top: 24px;
@@ -917,9 +893,7 @@ body {
     }
 }
 
-/* ========================================
    Loading 加载指示器
-   ======================================== */
 .loading-overlay {
     position: fixed;
     top: 0;
@@ -957,9 +931,7 @@ body {
     font-weight: 500;
 }
 
-/* ========================================
    复制日期选项
-   ======================================== */
 .copy-date-options {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -1027,9 +999,7 @@ body {
     opacity: 0.8;
 }
 
-/* ========================================
    星期列添加按钮
-   ======================================== */
 .day-column .add-btn {
     position: absolute;
     top: 8px;
@@ -1059,9 +1029,7 @@ body {
     box-shadow: 0 4px 16px rgba(102, 126, 234, 0.5);
 }
 
-/* ========================================
    今日高亮
-   ======================================== */
 .day-header.today-highlight {
     background: linear-gradient(135deg, #ff3b30, #ff6961) !important;
     position: relative;
@@ -1086,9 +1054,7 @@ body {
     border-radius: var(--radius-md);
 }
 
-/* ========================================
    日期输入容器
-   ======================================== */
 .date-input-container {
     display: flex;
     gap: 12px;
@@ -1101,9 +1067,7 @@ body {
     background: rgba(255, 255, 255, 0.9);
 }
 
-/* ========================================
    响应式设计 - 移动端优化
-   ======================================== */
 @media (max-width: 768px) {
     /* 安全区域 */
     .container {
@@ -1383,9 +1347,7 @@ body {
     }
 }
 
-/* ========================================
    大屏幕优化 - 笔记本/桌面
-   ======================================== */
 @media (min-width: 1200px) {
     .container {
         padding: 32px 40px;
@@ -1427,9 +1389,7 @@ body {
     }
 }
 
-/* ========================================
    超宽屏幕优化 - 大显示器
-   ======================================== */
 @media (min-width: 1600px) {
     .container {
         max-width: 1600px;
@@ -1490,9 +1450,7 @@ body {
     }
 }
 
-/* ========================================
    平板横屏专项优化
-   ======================================== */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .container {
         padding: 16px 20px;
@@ -1562,7 +1520,6 @@ body {
         font-size: 10px;
     }
 }
-<<<<<<< HEAD
 
 /* 备份锁定状态样式 */
 .backup-locked {
@@ -1591,5 +1548,3 @@ body {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-=======
->>>>>>> 1098dacf6480dba9262614e4f459b606098a9bd7
